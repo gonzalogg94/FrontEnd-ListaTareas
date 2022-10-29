@@ -2,6 +2,7 @@ import ListaTarea from "./ListaTarea";
 import { Form, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
+
 const FormularioTarea = () => {
   const tareasLocalStorage =
     JSON.parse(localStorage.getItem("arregloTareaKey")) || [];
@@ -37,7 +38,7 @@ const FormularioTarea = () => {
             onChange={(e) => setTarea(e.target.value)}
             value={tarea}
           />
-          <Button variant="primary" type="submit">
+          <Button variant="warning" type="submit">
             Enviar
           </Button>
         </Form.Group>
